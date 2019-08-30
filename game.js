@@ -8,8 +8,5 @@ function nextSequence() {
   gamePattern.push(randomChosenColor);
 
   new Audio("sounds/" + randomChosenColor + ".mp3").play();
-  $("." + randomChosenColor).fadeOut(100);
-  setTimeout(function() {
-    $("." + randomChosenColor).fadeIn(100);
-  }, 50);
+  $("." + randomChosenColor).fadeOut(100).fadeIn(100);
 }
