@@ -42,8 +42,10 @@ function checkAnswer(currentLevel) {
       }, 1000);
     }
   } else {
-    playSound("wrong");
-    $("body").addClass("game-over");
+    setTimeout(function() {
+      playSound("wrong");
+      $("body").addClass("game-over");
+    }, 350);
     setTimeout(function(){
       $("body").removeClass("game-over");
     }, 200);
