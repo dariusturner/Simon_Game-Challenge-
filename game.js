@@ -45,10 +45,10 @@ function checkAnswer(currentLevel) {
     setTimeout(function() {
       playSound("wrong");
       $("body").addClass("game-over");
-    }, 350);
+      }, 350);
     setTimeout(function(){
       $("body").removeClass("game-over");
-    }, 200);
+    }, 650);
 
     // Start Over
     $("#level-title").text("Game Over, Press Any Key To Restart");
